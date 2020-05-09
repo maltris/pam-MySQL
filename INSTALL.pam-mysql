@@ -13,6 +13,9 @@ Installation instructions.
      the MariaDB-shared package, otherwise you get a cryptic
        "configure: error: unable to find the crypt() function"
       error. (see https://github.com/NigelCunningham/pam-MySQL/issues/42 )
+      
+   Alpine:
+     apk add make autoconf libtool automake alpine-sdk mysql-dev linux-pam-dev
 
 2. Run "autoreconf -f -i". You can skip this step if you are building
    from a distributed tarball and thus "configure" is already present.
